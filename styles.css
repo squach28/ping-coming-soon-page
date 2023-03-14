@@ -1,0 +1,167 @@
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --pale-red: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    padding: 2em;
+    font-size: 20px;
+    font-family: "Libre Franklin", "sans-serif";
+    height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    padding-top: 1em;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1em;
+    font-weight: 300;
+    color: var(--gray);
+}
+
+p {
+    margin: 0;
+    font-size: 0.75rem;
+    margin: 1em 0;
+}
+
+i {
+    font-size: 1.25rem;
+    color: var(--blue);
+    border-radius: 50%;
+    box-shadow: 0 0 1px black;
+    padding: 0.5em;
+    text-align: center;
+    margin: 0 0.25em;
+    cursor: pointer;
+}
+
+i:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 1em 0;
+    border-radius: 40px;
+    border: 1px solid rgba(175, 174, 174, 0.75);
+    text-indent: 20px;
+    margin-bottom: 0.75em;
+}
+
+input[type="text"]::placeholder {
+    color: rgba(141, 140, 140, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 1em;
+    background-color: var(--blue);
+    color: white;
+    font-family: inherit;
+    border: none;
+    border-radius: 40px;
+    margin-bottom: 1em;
+    font-weight: 600;
+    box-shadow: 0 2px 5px var(--blue);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(223, 70%, 68%);;
+}
+
+.bold {
+    font-weight: bold;
+    color: black;
+}
+
+.logo {
+    width: 100%;
+    margin-top: 2em;
+}
+
+.logo-container {
+    margin-bottom: 2em;
+}
+
+.input-container {
+    position: relative;
+}
+
+footer {   
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 0.75rem;
+    color: gray;
+}
+
+#email-error {
+    display: none;
+    color: red;
+    font-size: 0.75rem;
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    margin-bottom: 1em;
+}
+
+@media (min-width: 600px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+
+    .input-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        margin-bottom: 2em;
+    }
+
+    button {
+        max-width: 200px;
+        font-size: 1.25rem;
+        margin-bottom: 0;
+    }
+
+    input[type="text"] {
+        max-width: 400px;
+        font-size: 1.25rem;
+        margin-bottom: 0;
+    }
+
+    .logo {
+        max-width: 700px;
+    }
+}
